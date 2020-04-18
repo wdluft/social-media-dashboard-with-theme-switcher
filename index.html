@@ -1,87 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Social Media Dashboard
+        </h1>
+        <p>
+          Total Followers: 23,004
+        </p>
 
-  Dark Mode
+        <p>
+          Dark Mode
 
-  
+          <span>Toggle Slider</span>
+        </p>
+      </header>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <section class="followerCards">
+        <div class="followerCard">
+          <p class="follwerCard__username">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook Icon"
+              class="followerCard__socialImageIcon"
+            />
+            @nathanf
+          </p>
+          <h1 class="followerCard__followerCount">
+            1987
+          </h1>
+          <h3>
+            Followers
+          </h3>
+          <p class="followerCard__newCount followerCard__newCount--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" /> 12 Today
+          </p>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="follwerCard">
+          <p class="follwerCard__username">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="Twitter Icon"
+              class="followerCard__socialImageIcon"
+            />
+            @nathanf
+          </p>
+          <h1 class="followerCard__followerCount">
+            1044
+          </h1>
+          <h3>Followers</h3>
+          <p followerCard__newCount followerCard__newCount--positive>
+            <img src="./images/icon-up.svg" alt="Up Icon" /> 99 Today
+          </p>
+        </div>
+        <div class="follwerCard">
+          <p class="follwerCard__username">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="Instagram Icon"
+              class="followerCard__socialImageIcon"
+            />
+            @realnathanf
+          </p>
+          <h1 class="followerCard__followerCount">
+            11k
+          </h1>
+          <h3>Followers</h3>
+          <p followerCard__newCount followerCard__newCount--positive>
+            <img src="./images/icon-up.svg" alt="Up Icon" /> 1099 Today
+          </p>
+        </div>
+        <div class="follwerCard">
+          <p class="follwerCard__username">
+            <img
+              src="./images/icon-youtube.svg"
+              alt="YouTube Icon"
+              class="followerCard__socialImageIcon"
+            />
+            Nathan F.
+          </p>
+          <h1 class="followerCard__followerCount">
+            8239
+          </h1>
+          <h3>
+            Subscribers
+          </h3>
+          <p followerCard__newCount followerCard__newCount--negative>
+            <img src="./images/icon-down.svg" alt="Down Icon" /> 144 Today
+          </p>
+        </div>
+      </section>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <section class="todayOverview">
+        <h2>
+          Overview - Today
+        </h2>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="overviewCard">
+          <p>
+            Page Views
+          </p>
+          <!-- icon -->
+          <h3>
+            87
+          </h3>
+          <h6>
+            3%
+          </h6>
+        </div>
 
+        <div class="overviewCard">
+          <p>
+            Likes
+          </p>
+          <!-- icon -->
+          <h3>
+            52
+          </h3>
+          <h6>
+            2%
+          </h6>
+        </div>
 
+        <div class="overviewCard">
+          <p>
+            Likes
+          </p>
+          <!-- icon -->
+          <h3>
+            5462
+          </h3>
+          <h6>
+            2257%
+          </h6>
+        </div>
+        <div class="overviewCard">
+          <p>
+            Profile Views
+          </p>
+          <!-- icon -->
+          <h3>
+            52k
+          </h3>
+          <h6>
+            1375%
+          </h6>
+        </div>
+        <div class="overviewCard">
+          <p>
+            Retweets
+          </p>
+          <!-- icon -->
+          <h3>
+            117
+          </h3>
+          <h6>
+            303%
+          </h6>
+        </div>
+        <div class="overviewCard">
+          <p>
+            Likes
+          </p>
+          <!-- icon -->
+          <h3>
+            507
+          </h3>
+          <h6>
+            553%
+          </h6>
+        </div>
+        <div class="overviewCard">
+          <p>
+            Likes
+          </p>
+          <!-- icon -->
+          <h3>
+            107
+          </h3>
+          <h6>
+            19%
+          </h6>
+        </div>
+        <div class="overviewCard">
+          <p>
+            Total Views
+          </p>
+          <!-- icon -->
+          <h3>
+            1407
+          </h3>
+          <h6>
+            12%
+          </h6>
+        </div>
+      </section>
+    </div>
 
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Will Luft</a>.
+    </div>
+  </body>
 </html>
