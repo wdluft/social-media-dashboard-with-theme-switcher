@@ -52,6 +52,7 @@ body {
   border-bottom: 0.5px solid var(--textColor2);
 }
 
+/* Follower Cards */
 .followerCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,6 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .followerCard__newCount--positive {
@@ -122,5 +124,61 @@ body {
 }
 
 .followerCard__newCount--negative {
+  color: var(--red);
+}
+
+/* Overview - Today */
+.todayOverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.todayOverview__title {
+  justify-self: left;
+  padding-left: 1.5rem;
+  grid-column: 1 / -1;
+}
+
+.overviewCard {
+  width: 90%;
+  background: var(--cardBg);
+  border-radius: 5px;
+  padding: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  grid-gap: 1.75rem;
+}
+
+.overviewCard__metric {
+  font-weight: bold;
+}
+
+.overviewCard__icon {
+  justify-self: end;
+}
+
+.overviewCard__count {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.overviewCard__percent {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.overviewCard__percent--positive {
+  color: var(--green);
+}
+
+.overviewCard__percent--negative {
   color: var(--red);
 }
