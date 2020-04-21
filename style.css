@@ -15,6 +15,12 @@
   --cardBg: hsl(228, 28%, 20%);
   --textColor: hsl(0, 0%, 100%);
   --textColor2: hsl(228, 34%, 66%);
+  --themeToggleBg: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --themeToggleDot: --bgColor;
 
   /* Text */
   --bodyFont: 'Inter', sans-serif;
@@ -26,6 +32,11 @@
   --cardBg: hsl(227, 47%, 96%);
   --textColor: hsl(230, 17%, 14%);
   --textColor2: hsl(228, 12%, 44%);
+  --themeToggleBg: linear-gradient(
+    to right,
+    hsl(230, 22%, 74%),
+    hsl(230, 22%, 74%)
+  );
 }
 
 * {
@@ -50,14 +61,47 @@ body {
   color: var(--textColor2);
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .header {
   padding: 1.5rem;
   border-bottom: 0.5px solid var(--textColor2);
+}
+
+.header__totalFollowers {
+  font-weight: bold;
+}
+
+/* Theme toggle */
+.themeSliderToggle__checkbox {
+  display: none;
+}
+
+.themeSliderToggle__label {
+  background-image: var(--themeToggleBg);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+}
+
+.themeSliderToggle__label::after {
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  content: ' ';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 21px;
+  height: 21px;
+}
+
+.themeSliderToggle__checkbox:checked ~ label::after {
+  transform: translateX(25px);
 }
 
 /* Follower Cards */
@@ -67,6 +111,7 @@ body {
   grid-gap: 1.5rem;
   justify-items: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .followerCard {
@@ -145,6 +190,7 @@ body {
 }
 
 .todayOverview__title {
+  font-size: 1.75rem;
   justify-self: left;
   padding-left: 1.5rem;
   grid-column: 1 / -1;

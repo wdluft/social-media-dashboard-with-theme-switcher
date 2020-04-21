@@ -16,8 +16,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <p class="container"></p>
+  <body class="">
     <header class="header">
       <h1 class="header__title">
         Social Media Dashboard
@@ -26,11 +25,19 @@
         Total Followers: 23,004
       </p>
     </header>
-    <p>
-      Dark Mode
-
-      <span>Toggle Slider</span>
-    </p>
+    <div class="themeSlider">
+      <p>
+        Dark Mode
+      </p>
+      <div class="themeSliderToggle">
+        <input
+          type="checkbox"
+          id="toggle"
+          class="themeSliderToggle__checkbox"
+        />
+        <label for="toggle" class="themeSliderToggle__label"></label>
+      </div>
+    </div>
 
     <section class="followerCards">
       <div class="followerCard">
@@ -52,7 +59,7 @@
             Followers
           </p>
         </div>
-        <p class="followerCard__newCount">
+        <p class="followerCard__newCount followerCard__newCount--positive">
           <img src="./images/icon-up.svg" alt="Up Icon" />
           <span>&ensp;</span>
           12 Today
@@ -302,5 +309,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Will Luft</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
