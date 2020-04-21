@@ -254,3 +254,13 @@ hr {
 .overviewCard__percent--negative {
   color: var(--red);
 }
+
+/* Attribution */
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
