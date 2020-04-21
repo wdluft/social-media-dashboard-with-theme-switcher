@@ -3,7 +3,6 @@ console.log(themeToggle);
 const body = document.body;
 
 const toggleTheme = () => {
-  console.log('working');
   if (body.classList.contains('lightTheme')) {
     body.classList.remove('lightTheme');
   } else {

@@ -63,14 +63,32 @@ body {
 
 .header {
   padding: 1.5rem;
-  border-bottom: 0.5px solid var(--textColor2);
 }
 
 .header__totalFollowers {
   font-weight: bold;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--cardBg);
+  margin: 0 1.5rem;
+}
+
 /* Theme toggle */
+.themeSlider {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.themeSlider__p {
+  font-weight: bold;
+}
+
 .themeSliderToggle__checkbox {
   display: none;
 }
