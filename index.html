@@ -17,300 +17,306 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="">
-    <header class="header">
-      <h1 class="header__title">
-        Social Media Dashboard
-      </h1>
-      <p class="header__totalFollowers offColorText">
-        Total Followers: 23,004
-      </p>
-    </header>
+    <div class="topBg"></div>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">
+          Social Media Dashboard
+        </h1>
+        <p class="header__totalFollowers offColorText">
+          Total Followers: 23,004
+        </p>
 
-    <hr />
+        <div class="themeSlider">
+          <p class="themeSlider__p offColorText">
+            Dark Mode <span>&ensp;</span>
+          </p>
+          <div class="themeSliderToggle">
+            <input
+              type="checkbox"
+              id="toggle"
+              class="themeSliderToggle__checkbox"
+            />
+            <label for="toggle" class="themeSliderToggle__label"></label>
+          </div>
+        </div>
+      </header>
 
-    <div class="themeSlider">
-      <p class="themeSlider__p offColorText">
-        Dark Mode
-      </p>
-      <div class="themeSliderToggle">
-        <input
-          type="checkbox"
-          id="toggle"
-          class="themeSliderToggle__checkbox"
-        />
-        <label for="toggle" class="themeSliderToggle__label"></label>
-      </div>
-    </div>
+      <section class="followerCards">
+        <div class="followerCard">
+          <div
+            class="followerCard__border followerCard__border--facebook"
+          ></div>
+          <p class="followerCard__username offColorText">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook Icon"
+              class="followerCard__socialImageIcon"
+            />
+            <span>&ensp;</span>
+            @nathanf
+          </p>
+          <div class="followerCard__followerCount">
+            <h1 class="followerCount__number">
+              1987
+            </h1>
+            <p class="followerCount__p offColorText">
+              Followers
+            </p>
+          </div>
+          <p class="followerCard__newCount followerCard__newCount--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            12 Today
+          </p>
+        </div>
 
-    <section class="followerCards">
-      <div class="followerCard">
-        <div class="followerCard__border followerCard__border--facebook"></div>
-        <p class="followerCard__username offColorText">
+        <div class="followerCard twitter">
+          <div class="followerCard__border followerCard__border--twitter"></div>
+          <p class="followerCard__username offColorText">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="Twitter Icon"
+              class="followerCard__socialImageIcon"
+            />
+            <span>&ensp;</span>
+            @nathanf
+          </p>
+          <div class="followerCard__followerCount">
+            <h1 class="followerCount__number">
+              1044
+            </h1>
+            <p class="followerCount__p offColorText">
+              Followers
+            </p>
+          </div>
+          <p class="followerCard__newCount followerCard__newCount--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            99 Today
+          </p>
+        </div>
+
+        <div class="followerCard instagram">
+          <div
+            class="followerCard__border followerCard__border--instagram"
+          ></div>
+          <p class="followerCard__username offColorText">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="Instagram Icon"
+              class="followerCard__socialImageIcon"
+            />
+            <span>&ensp;</span>
+            @realnathanf
+          </p>
+          <div class="followerCard__followerCount">
+            <h1 class="followerCount__number">
+              11k
+            </h1>
+            <p class="followerCount__p offColorText">
+              Followers
+            </p>
+          </div>
+          <p class="followerCard__newCount followerCard__newCount--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            1099 Today
+          </p>
+        </div>
+
+        <div class="followerCard youtube">
+          <div class="followerCard__border followerCard__border--youtube"></div>
+          <p class="followerCard__username offColorText">
+            <img
+              src="./images/icon-youtube.svg"
+              alt="YouTube Icon"
+              class="followerCard__socialImageIcon"
+            />
+            <span>&ensp;</span>
+            Nathan F.
+          </p>
+          <div class="followerCard__followerCount">
+            <h1 class="followerCount__number">
+              8239
+            </h1>
+            <p class="followerCount__p offColorText">
+              Subscribers
+            </p>
+          </div>
+          <p class="followerCard__newCount followerCard__newCount--negative">
+            <img src="./images/icon-down.svg" alt="Down Icon" />
+            <span>&ensp;</span>
+            144 Today
+          </p>
+        </div>
+      </section>
+
+      <section class="todayOverview">
+        <h2 class="todayOverview__title">
+          Overview - Today
+        </h2>
+
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Page Views
+          </p>
           <img
             src="./images/icon-facebook.svg"
-            alt="Facebook Icon"
-            class="followerCard__socialImageIcon"
+            alt="Facebook"
+            class="overviewCard__icon"
           />
-          <span>&ensp;</span>
-          @nathanf
-        </p>
-        <div class="followerCard__followerCount">
-          <h1 class="followerCount__number">
-            1987
-          </h1>
-          <p class="followerCount__p offColorText">
-            Followers
+          <h2 class="overviewCard__count">
+            87
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            3%
           </p>
         </div>
-        <p class="followerCard__newCount followerCard__newCount--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          12 Today
-        </p>
-      </div>
 
-      <div class="followerCard twitter">
-        <div class="followerCard__border followerCard__border--twitter"></div>
-        <p class="followerCard__username offColorText">
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Likes
+          </p>
           <img
-            src="./images/icon-twitter.svg"
-            alt="Twitter Icon"
-            class="followerCard__socialImageIcon"
+            src="./images/icon-facebook.svg"
+            alt="Facebook"
+            class="overviewCard__icon"
           />
-          <span>&ensp;</span>
-          @nathanf
-        </p>
-        <div class="followerCard__followerCount">
-          <h1 class="followerCount__number">
-            1044
-          </h1>
-          <p class="followerCount__p offColorText">
-            Followers
+          <h2 class="overviewCard__count">
+            52
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--negative">
+            <img src="./images/icon-down.svg" alt="Down Icon" />
+            <span>&ensp;</span>
+            3%
           </p>
         </div>
-        <p class="followerCard__newCount followerCard__newCount--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          99 Today
-        </p>
-      </div>
 
-      <div class="followerCard instagram">
-        <div class="followerCard__border followerCard__border--instagram"></div>
-        <p class="followerCard__username offColorText">
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Likes
+          </p>
           <img
             src="./images/icon-instagram.svg"
-            alt="Instagram Icon"
-            class="followerCard__socialImageIcon"
+            alt="Instagram"
+            class="overviewCard__icon"
           />
-          <span>&ensp;</span>
-          @realnathanf
-        </p>
-        <div class="followerCard__followerCount">
-          <h1 class="followerCount__number">
-            11k
-          </h1>
-          <p class="followerCount__p offColorText">
-            Followers
+          <h2 class="overviewCard__count">
+            5462
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            2257%
           </p>
         </div>
-        <p class="followerCard__newCount followerCard__newCount--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          1099 Today
-        </p>
-      </div>
 
-      <div class="followerCard youtube">
-        <div class="followerCard__border followerCard__border--youtube"></div>
-        <p class="followerCard__username offColorText">
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Profile Views
+          </p>
+          <img
+            src="./images/icon-instagram.svg"
+            alt="Instagram"
+            class="overviewCard__icon"
+          />
+          <h2 class="overviewCard__count">
+            52k
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            1375%
+          </p>
+        </div>
+
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Retweets
+          </p>
+          <img
+            src="./images/icon-twitter.svg"
+            alt="Twitter"
+            class="overviewCard__icon"
+          />
+          <h2 class="overviewCard__count">
+            117
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            303%
+          </p>
+        </div>
+
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Likes
+          </p>
+          <img
+            src="./images/icon-twitter.svg"
+            alt="Twitter"
+            class="overviewCard__icon"
+          />
+          <h2 class="overviewCard__count">
+            507
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--positive">
+            <img src="./images/icon-up.svg" alt="Up Icon" />
+            <span>&ensp;</span>
+            553%
+          </p>
+        </div>
+
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Likes
+          </p>
           <img
             src="./images/icon-youtube.svg"
-            alt="YouTube Icon"
-            class="followerCard__socialImageIcon"
+            alt="Youtube"
+            class="overviewCard__icon"
           />
-          <span>&ensp;</span>
-          Nathan F.
-        </p>
-        <div class="followerCard__followerCount">
-          <h1 class="followerCount__number">
-            8239
-          </h1>
-          <p class="followerCount__p offColorText">
-            Subscribers
+          <h2 class="overviewCard__count">
+            107
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--negative">
+            <img src="./images/icon-down.svg" alt="Down Icon" />
+            <span>&ensp;</span>
+            19%
           </p>
         </div>
-        <p class="followerCard__newCount followerCard__newCount--negative">
-          <img src="./images/icon-down.svg" alt="Down Icon" />
-          <span>&ensp;</span>
-          144 Today
-        </p>
+
+        <div class="overviewCard">
+          <p class="overviewCard__metric offColorText">
+            Total Views
+          </p>
+          <img
+            src="./images/icon-youtube.svg"
+            alt="Youtube"
+            class="overviewCard__icon"
+          />
+          <h2 class="overviewCard__count">
+            1407
+          </h2>
+          <p class="overviewCard__percent overviewCard__percent--negative">
+            <img src="./images/icon-down.svg" alt="Down Icon" />
+            <span>&ensp;</span>
+            12%
+          </p>
+        </div>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/iamwilldl" target="_blank">Will Luft</a>.
       </div>
-    </section>
-
-    <section class="todayOverview">
-      <h2 class="todayOverview__title">
-        Overview - Today
-      </h2>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Page Views
-        </p>
-        <img
-          src="./images/icon-facebook.svg"
-          alt="Facebook"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          87
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          3%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Likes
-        </p>
-        <img
-          src="./images/icon-facebook.svg"
-          alt="Facebook"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          52
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--negative">
-          <img src="./images/icon-down.svg" alt="Down Icon" />
-          <span>&ensp;</span>
-          3%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Likes
-        </p>
-        <img
-          src="./images/icon-instagram.svg"
-          alt="Instagram"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          5462
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          2257%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Profile Views
-        </p>
-        <img
-          src="./images/icon-instagram.svg"
-          alt="Instagram"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          52k
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          1375%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Retweets
-        </p>
-        <img
-          src="./images/icon-twitter.svg"
-          alt="Twitter"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          117
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          303%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Likes
-        </p>
-        <img
-          src="./images/icon-twitter.svg"
-          alt="Twitter"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          507
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--positive">
-          <img src="./images/icon-up.svg" alt="Up Icon" />
-          <span>&ensp;</span>
-          553%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Likes
-        </p>
-        <img
-          src="./images/icon-youtube.svg"
-          alt="Youtube"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          107
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--negative">
-          <img src="./images/icon-down.svg" alt="Down Icon" />
-          <span>&ensp;</span>
-          19%
-        </p>
-      </div>
-
-      <div class="overviewCard">
-        <p class="overviewCard__metric offColorText">
-          Total Views
-        </p>
-        <img
-          src="./images/icon-youtube.svg"
-          alt="Youtube"
-          class="overviewCard__icon"
-        />
-        <h2 class="overviewCard__count">
-          1407
-        </h2>
-        <p class="overviewCard__percent overviewCard__percent--negative">
-          <img src="./images/icon-down.svg" alt="Down Icon" />
-          <span>&ensp;</span>
-          12%
-        </p>
-      </div>
-    </section>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Will Luft</a>.
     </div>
 
     <script src="script.js"></script>

@@ -57,36 +57,58 @@ body {
   line-height: 1.5;
 }
 
+.topBg {
+  dipslay: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
 .offColorText {
   color: var(--textColor2);
 }
 
 .header {
-  padding: 1.5rem;
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'totalFollowers totalFollowers'
+    'themeSlider themeSlider';
+}
+
+.header__title {
+  grid-column: 1 / -1;
+  grid-area: title;
 }
 
 .header__totalFollowers {
   font-weight: bold;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--cardBg);
-  margin: 0 1.5rem;
+  grid-area: totalFollowers;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--cardBg);
 }
 
 /* Theme toggle */
 .themeSlider {
-  padding: 1rem 1.5rem;
+  padding-top: 1rem;
+  grid-area: themeSlider;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .themeSlider__p {
   font-weight: bold;
+}
+
+.themeSliderToggle {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .themeSliderToggle__checkbox {
@@ -133,13 +155,13 @@ hr {
 }
 
 .followerCard {
-  width: 90%;
   background: var(--cardBg);
   border-radius: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .followerCard > * {
@@ -210,19 +232,19 @@ hr {
 .todayOverview__title {
   font-size: 1.75rem;
   justify-self: left;
-  padding-left: 1.5rem;
   grid-column: 1 / -1;
 }
 
 .overviewCard {
-  width: 90%;
   background: var(--cardBg);
   border-radius: 5px;
   padding: 1.75rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: end;
   grid-gap: 1.75rem;
+  width: 100%;
+  height: 100%;
 }
 
 .overviewCard__metric {
@@ -263,4 +285,35 @@ hr {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .topBg {
+    background: var(--topBgPattern);
+    height: 30vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .header {
+    grid-template-areas:
+      'title title'
+      'totalFollowers themeSlider';
+
+    margin-bottom: 2rem;
+  }
+
+  .header__totalFollowers {
+    border: none;
+  }
+
+  .themeSlider {
+    padding: 0;
+    justify-content: flex-end;
+  }
 }
