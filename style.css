@@ -21,6 +21,11 @@
     hsl(146, 68%, 55%)
   );
   --themeToggleDot: --bgColor;
+  --themeToggleBgHover: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
 
   /* Text */
   --bodyFont: 'Inter', sans-serif;
@@ -138,6 +143,10 @@ body {
   transition: all ease-in-out 0.3s;
   width: 21px;
   height: 21px;
+}
+
+.themeSliderToggle__label:hover {
+  background-image: var(--themeToggleBgHover);
 }
 
 .themeSliderToggle__checkbox:checked ~ label::after {
